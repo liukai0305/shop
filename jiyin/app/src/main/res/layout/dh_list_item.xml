@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="17dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bj"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/dh_list_item_shape">
+
+        <ImageView
+            android:id="@+id/show_img"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/show_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/font_333333"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dh_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="@color/font_333333"
+        android:textSize="11sp" />
+
+    <com.qutu.talk.view.ShapeTextView
+        android:id="@+id/dh_btn"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:text="兑换"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:cornersRadius="50dp"
+        app:solidNormal="@color/font_ff3e6d" />
+</LinearLayout>

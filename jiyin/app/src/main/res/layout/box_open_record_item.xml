@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#8000"
+    android:padding="15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        tools:text="15421、"/>
+    
+    <ImageView
+        android:id="@+id/iv_gift"
+        android:layout_width="25dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        tools:src="@mipmap/kaobei"/>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_marginLeft="13dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_gift_name"
+                android:layout_width="wrap_content"
+                tools:text="星星"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                tools:text="X12"
+                android:textSize="14sp"
+                android:textColor="#f00"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            tools:text="10金币"
+            android:textColor="#FFB610"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="01/18 12:45"
+        android:textSize="14sp"
+        android:textColor="#fff"/>
+</LinearLayout>

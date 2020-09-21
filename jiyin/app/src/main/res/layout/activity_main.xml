@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameLayout_main"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.qutu.talk.view.MiniBarrageViewLayout
+                    android:id="@+id/mini_bv_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp">
+
+                </com.qutu.talk.view.MiniBarrageViewLayout>
+
+
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <!--<RadioGroup-->
+            <!--android:id="@+id/radioGroup"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center"-->
+            <!-- -->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="5dp">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+
+                <RadioButton
+                    android:id="@+id/radio_yule"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_main_radiobuttion_home"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="娱乐"
+                    android:textColor="@drawable/selector_main_radiobutton_text"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <RadioButton
+                    android:id="@+id/radio_peiwan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_main_radiobuttion_peiwan"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="陪玩"
+                    android:textColor="@drawable/selector_main_radiobutton_text"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <!--                <android.support.constraint.ConstraintLayout-->
+                <!--                    android:id="@+id/radio_message_one"-->
+                <!--                    android:layout_width="0dp" android:visibility="gone"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:clickable="true"-->
+                <!--                    android:descendantFocusability="blocksDescendants"-->
+                <!--                    android:focusable="true">-->
+                <!--                    &lt;!&ndash;android:focusableInTouchMode="true"&ndash;&gt;-->
+                <!--                    &lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                <!--                    <RadioButton-->
+                <!--                        android:id="@+id/radio_message"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:button="@null"-->
+                <!--                        android:checked="false"-->
+                <!--                        android:clickable="false"-->
+                <!--                        android:drawableTop="@drawable/selector_main_radiobuttion_message"-->
+                <!--                        android:drawablePadding="3dp"-->
+                <!--                        android:focusable="false"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:text="消息"-->
+                <!--                        android:textColor="@drawable/selector_main_radiobutton_text"-->
+                <!--                        android:textSize="11sp"-->
+                <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--                        app:layout_constraintRight_toRightOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent"-->
+                <!--                        tools:ignore="HardcodedText,SmallSp" />-->
+
+                <!--                    <com.qutu.talk.app.view.CircularImage-->
+                <!--                        android:id="@+id/unread_home_tips"-->
+                <!--                        android:layout_width="6dp"-->
+                <!--                        android:layout_height="6dp"-->
+                <!--                        android:background="@drawable/yuandian"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        app:layout_constraintCircle="@+id/radio_message"-->
+                <!--                        app:layout_constraintCircleAngle="20"-->
+                <!--                        app:layout_constraintCircleRadius="19dp"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--                        app:layout_constraintRight_toRightOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+                <!--                </android.support.constraint.ConstraintLayout>-->
+
+                <!--                <RadioButton-->
+                <!--                    android:id="@+id/radio_family"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:button="@null"-->
+                <!--                    android:checked="false"-->
+                <!--                    android:drawableTop="@drawable/selector_main_radiobuttion_coummunity"-->
+                <!--                    android:drawablePadding="3dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="家族"-->
+                <!--                    android:textColor="@drawable/selector_main_radiobutton_text"-->
+                <!--                    android:textSize="11sp"-->
+                <!--                    tools:ignore="HardcodedText,SmallSp" />-->
+
+                <RadioButton
+                    android:id="@+id/radio_dongtai"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_main_radiobuttion_coummunity"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="动态"
+                    android:textColor="@drawable/selector_main_radiobutton_text"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+
+                <!--                <android.support.constraint.ConstraintLayout-->
+                <!--                    android:id="@+id/radio_message_two"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:clickable="true"-->
+                <!--                    android:descendantFocusability="blocksDescendants"-->
+                <!--                    android:focusable="true">-->
+                <!--                    &lt;!&ndash;android:focusableInTouchMode="true"&ndash;&gt;-->
+                <!--                    &lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+                <!--                    <RadioButton-->
+                <!--                        android:id="@+id/radio_center"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:button="@null"-->
+                <!--                        android:checked="false"-->
+                <!--                        android:clickable="false"-->
+                <!--                        android:drawableTop="@drawable/selector_main_radiobuttion_center"-->
+                <!--                        android:drawablePadding="3dp"-->
+                <!--                        android:focusable="false"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:text="我的"-->
+                <!--                        android:textColor="@drawable/selector_main_radiobutton_text"-->
+                <!--                        android:textSize="11sp"-->
+                <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--                        app:layout_constraintRight_toRightOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent"-->
+                <!--                        tools:ignore="HardcodedText,SmallSp" />-->
+
+                <!--                    <com.qutu.talk.app.view.CircularImage-->
+                <!--                        android:id="@+id/unread_my_tips"-->
+                <!--                        android:layout_width="6dp"-->
+                <!--                        android:layout_height="6dp"-->
+                <!--                        android:background="@drawable/yuandian"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        app:layout_constraintCircle="@+id/radio_center"-->
+                <!--                        app:layout_constraintCircleAngle="20"-->
+                <!--                        app:layout_constraintCircleRadius="19dp"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--                        app:layout_constraintRight_toRightOf="parent"-->
+                <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+                <!--                </android.support.constraint.ConstraintLayout>-->
+
+                <RadioButton
+                    android:id="@+id/radio_center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_main_radiobuttion_center"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="我的"
+                    android:textColor="@drawable/selector_main_radiobutton_text"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+            </LinearLayout>
+            <!--</RadioGroup>-->
+        </LinearLayout>
+
+
+        <!--  <com.qutu.talk.view.barry.BarrageView
+              android:id="@+id/barrageview"
+              android:layout_marginTop="150dp"
+              android:layout_width="match_parent"
+              android:layout_height="30dp" />-->
+        <RadioButton
+            android:id="@+id/radio_home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@mipmap/ic_launcher_app_round"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="首页"
+            android:textColor="@drawable/selector_main_radiobutton_text"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <com.orient.tea.barragephoto.ui.BarrageView
+            android:id="@+id/barrage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/float_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="80dp"
+            android:src="@mipmap/icon_news"
+            />
+    </RelativeLayout>
+</LinearLayout>

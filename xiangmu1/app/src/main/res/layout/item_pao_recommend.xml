@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="15dp"
+    android:background="#FAF9FA">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/shape_round_top" />
+
+    <ImageView
+        android:id="@+id/robe_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/timg" />
+
+    <TextView
+        android:id="@+id/robe_socialTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/store_pink"
+        android:text="土豪是傻逼"
+        android:textColor="#FBF9F9" />
+
+    <TextView
+        android:id="@+id/robe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/robe_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:text="发生纠纷"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/robe_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/robe_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/store_pink"
+        android:text="1"
+        android:textColor="#FAF6F6" />
+
+    <TextView
+        android:id="@+id/robe_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/robe_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_baseline_place"
+        android:text="武汉" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/robe_place"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_follow_bg"
+        android:padding="10dp"
+        android:text="+关注"
+        android:textColor="#EC84A5" />
+
+</RelativeLayout>

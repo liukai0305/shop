@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="mini" />
+
+    <version value="3" />
+
+    <list>
+        <mapping class="com.qutu.talk.bean.LoginData" />
+        <mapping class="com.qutu.talk.bean.LocalMusicInfo" />
+
+    </list>
+    <storage value="internal" />
+</litepal>

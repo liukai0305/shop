@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="9dp"
+    android:orientation="vertical">
+
+    <com.qutu.talk.app.view.CircularImage
+        android:id="@+id/task_item_headimg"
+        android:layout_width="47dp"
+        android:layout_height="47dp" />
+
+    <com.qutu.talk.view.ShapeTextView
+        android:id="@+id/task_item_btn"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:cornersRadius="12dp"
+        app:solidNormal="@color/task_item_selector" />
+
+    <TextView
+        android:id="@+id/task_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/task_item_headimg"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/task_item_btn"
+        android:layout_toRightOf="@id/task_item_headimg"
+        android:textColor="@color/font_333333"
+        android:textSize="12sp" />
+    <!--android:ellipsize="end"
+        android:singleLine="true"-->
+
+    <TextView
+        android:id="@+id/task_item_piace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/task_item_name"
+        android:layout_alignBottom="@id/task_item_headimg"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toRightOf="@id/task_item_headimg"
+        android:textColor="@color/font_999999"
+        android:textSize="11sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/task_item_headimg"
+        android:layout_alignLeft="@id/task_item_name"
+        android:layout_alignRight="@id/task_item_btn"
+        android:layout_marginTop="5dp"
+        android:background="@color/line" />
+</RelativeLayout>

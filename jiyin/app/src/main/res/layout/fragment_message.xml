@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <RelativeLayout android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/font_333333"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/tishi_rela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/message_news"
+                android:layout_width="20dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/shequ_xiaoxi" />
+
+            <com.qutu.talk.app.view.CircularImage
+                android:id="@+id/tishi"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/yuandian"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_my_friend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/my_friend"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:textColor="#101010"
+                android:textSize="14sp"
+                android:text="好友"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_public_chat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/public_chat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:textColor="#101010"
+                android:textSize="14sp"
+                android:text="消息"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_focus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/my_focus"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:textColor="#101010"
+                android:textSize="14sp"
+                android:text="点单"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_fans"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/my_fans"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:textColor="#101010"
+                android:textSize="14sp"
+                android:text="家族"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/font_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

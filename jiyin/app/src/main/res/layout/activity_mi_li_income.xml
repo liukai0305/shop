@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.dashen.MiLiIncomeActivity">
+
+    <include layout="@layout/include_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/room_reward_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sum_prive_relative"
+        android:layout_below="@id/toolbar">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/touming"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/today_income_lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/room_reward_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <TextView
+                        android:id="@+id/today_income_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="钻石总收入"
+                        android:textColor="@color/font_333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/mili_sr_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:includeFontPadding="false"
+                        android:text="111111"
+                        android:textColor="@color/font_333333"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/appbar"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!---->
+            <!--android:orientation="vertical">-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/room_reward_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/room_reward_shape"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <!--</LinearLayout>-->
+
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

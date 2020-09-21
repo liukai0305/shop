@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/living"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/img_living_tu"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_living_tu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="薄如蝉翼,丝滑如肌肤"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/tv_living_trait"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="￥99"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_living_trait"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/hong"
+        android:id="@+id/tv_living_price"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/mili_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="2019.11.15   13:00"
+        android:textColor="@color/font_999999"
+        android:textSize="11sp" />
+    <TextView
+        android:id="@+id/mili_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/font_999999"
+        android:textSize="11sp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/mili_headimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/mili_time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/gender_boy"
+        app:riv_corner_radius="5dp" />
+
+    <TextView
+        android:id="@+id/mili_peo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mili_time"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/mili_headimg"
+        android:text="一瓶橙汁"
+        android:textColor="@color/font_333333"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/mili_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mili_peo_name"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/mili_headimg"
+        android:text="英雄联盟"
+        android:textColor="@color/font_333333"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mili_game_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mili_peo_name"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/mili_game_name"
+        android:text="x 16"
+        android:textColor="@color/font_333333"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/mili_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:text="+10金币"
+        android:textColor="@color/font_ff3e6d"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/mili_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/mili_headimg"
+        android:layout_marginTop="13dp"
+        android:background="@color/line" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+include ':lianxi2'
+include ':lianxi1'
+include ':lianxi'
+include ':zy2'
+include ':zy'
+include ':app'
+rootProject.name = "yueshu"

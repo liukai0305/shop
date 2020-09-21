@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.mine.MiLiRecordActivity">
+    <View
+        android:id="@+id/view_empty_head"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary" />
+    <include layout="@layout/include_title" />
+
+    <com.qutu.talk.utils.mytablayout.TabLayout
+        android:id="@+id/mili_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabGravity="center"
+        app:tabIndicator="@drawable/y_shape_tab_line"
+        app:tabIndicatorHeight="3dp"
+        app:tabPaddingBottom="-10dp"
+        app:tabLineOffset="25dp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/TabLayoutTextStyle2"
+        app:tabTextColor="@color/font_999999"
+        android:textSize="12sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/font_eeeeee" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mili_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

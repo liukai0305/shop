@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/ctl_accompany_tab"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="35dp"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="#FF3E6D"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_width="15dp"
+        app:tl_textSelectColor="#FF3E6D"
+        app:tl_textUnselectColor="#999999"
+        app:tl_tab_space_equal="true"
+        app:tl_textsize="@dimen/txt_size_13" />
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="15dp"
+    android:layout_weight="1"
+    android:visibility="visible">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/ly_view_no_data"
+            layout="@layout/layout_view_no_data" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            />
+    </FrameLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

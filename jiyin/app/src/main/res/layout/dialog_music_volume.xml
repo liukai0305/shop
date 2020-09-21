@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="110dp"
+    android:gravity="center_horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/shape_volume_bg"
+    >
+
+    <com.jaygoo.widget.VerticalRangeSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="16dp"
+        android:layout_height="100dp"
+        app:rsb_gravity="center"
+        app:rsb_progress_radius="4dp"
+        app:rsb_progress_color="#ff3e6d"
+        app:rsb_progress_default_color="#eeeeee"
+        app:rsb_mode="single"
+        app:rsb_thumb_width="9dp"
+        app:rsb_thumb_height="9dp"
+        app:rsb_progress_height="5dp"
+        app:rsb_thumb_inactivated_drawable="@mipmap/icon_touch_point"
+        app:rsb_thumb_drawable="@mipmap/icon_touch_point"
+        />
+</LinearLayout>

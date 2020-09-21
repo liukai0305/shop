@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_union"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="2dp"
+        >
+        <ImageView
+            android:id="@+id/img_people_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_banner_bg"
+            />
+        <TextView
+            android:id="@+id/tv_hot_count_union"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:drawableLeft="@mipmap/icon_home_hot"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="6dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="13dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:background="@drawable/shape_home_room_hot_bg"
+            android:textSize="@dimen/txt_size_12"
+            android:textColor="@color/white"
+            android:text="         "
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_union_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:maxEms="6"
+        android:textSize="@dimen/txt_size_14"
+        android:textColor="@color/font_333333"
+        />
+
+</LinearLayout>

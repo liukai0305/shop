@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    tools:showIn="@layout/activity_admin_home">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_bootombar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="13dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_diandan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/selector_room_diandan"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_diandan_cunt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="@id/img_diandan"
+                        app:layout_constraintLeft_toLeftOf="@id/img_diandan"
+                        app:layout_constraintCircle="@id/img_diandan"
+                        app:layout_constraintCircleRadius="22dp"
+                        app:layout_constraintCircleAngle="45"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="2dp"
+                        android:text="1"
+                        android:textSize="@dimen/txt_size_9"
+                        android:textColor="@color/white"
+                        android:background="@drawable/shape_red_yuan"
+                        android:visibility="gone"
+                        />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img_shiyin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/selector_room_shiyin"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_shiyin_cunt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="@id/img_shiyin"
+                        app:layout_constraintLeft_toLeftOf="@id/img_shiyin"
+                        app:layout_constraintCircle="@id/img_shiyin"
+                        app:layout_constraintCircleRadius="22dp"
+                        app:layout_constraintCircleAngle="45"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="2dp"
+                        android:text="1"
+                        android:textSize="@dimen/txt_size_9"
+                        android:textColor="@color/white"
+                        android:background="@drawable/shape_red_yuan"
+                        android:visibility="gone"
+                        />
+                </android.support.constraint.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imgPaimai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:src="@mipmap/room_dibu_paimai"
+                    android:visibility="gone" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgShangmai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:src="@drawable/selector_room_shangmai" />
+                    <TextView
+                        android:id="@+id/tv_cunt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="@id/imgShangmai"
+                        app:layout_constraintLeft_toLeftOf="@id/imgShangmai"
+                        app:layout_constraintCircle="@id/imgShangmai"
+                        app:layout_constraintCircleRadius="22dp"
+                        app:layout_constraintCircleAngle="45"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="2dp"
+                        android:text="1"
+                        android:textSize="@dimen/txt_size_9"
+                        android:textColor="@color/white"
+                        android:background="@drawable/shape_red_yuan"
+                        android:visibility="gone"
+                        />
+                </android.support.constraint.ConstraintLayout>
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/imgBimai"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/selector_room_bimai" />
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/imgTing"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/selector_room_ting" />
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/imgMusic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/room_dibu_yinyue" />
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/imgAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/room_dibu_gengduo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/imgMessage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/room_dibu_pinglun" />
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/imgBiaoqing"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/room_dibu_biaoqing"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<View-->
+                    <!--android:layout_width="10dp"-->
+                    <!--android:layout_height="1dp" />-->
+
+                <!--<com.opensource.svgaplayer.SVGAImageView-->
+                    <!--android:id="@+id/baoxiang"-->
+                    <!--android:layout_width="47dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--app:antiAlias="true"-->
+                    <!--app:source="baoxiang_rukou.svga" />-->
+            <!--</LinearLayout>-->
+
+            <com.qutu.talk.app.view.CircularImage
+                android:id="@+id/imgGift"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@id/ll_bootombar"
+                android:src="@mipmap/room_dibu_liwu" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll" />
+    <ImageView
+        android:id="@+id/iv_jindan"
+        android:layout_width="48dp"
+        android:src="@mipmap/jindan"
+        android:layout_height="52dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="16dp"
+        android:layout_above="@+id/ll"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/ll"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+<!--        <com.opensource.svgaplayer.SVGAImageView-->
+<!--            android:id="@+id/baoxiang"-->
+<!--            android:layout_width="47dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            app:antiAlias="true"-->
+<!--            app:source="baoxiang_rukou.svga" />-->
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"></View>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_vip_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_vip_enter_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+
+            >
+        <TextView
+            android:id="@+id/tv_vip_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingLeft="90dp"
+            android:paddingRight="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_12"
+            android:text="123333333333333333333333333333"
+            />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

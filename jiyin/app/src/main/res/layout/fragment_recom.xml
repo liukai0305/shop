@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+    <!--android:id="@+id/refreshLayout"-->
+    <!--app:srlAccentColor="@color/font_333333"-->
+    <!--app:srlPrimaryColor="@color/font_eeeeee"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/room_no" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="目前还没有房间哟"
+                    android:textColor="@color/font_999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/myList1"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:dividerHeight="10dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/gray"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll1"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+
+            <!--<TextView-->
+            <!--android:text="热门推荐"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/font_333333"-->
+            <!--android:drawableLeft="@mipmap/home_hot"-->
+            <!--android:drawablePadding="3dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<View-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@mipmap/home_tuijian_gengduo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <!--<com.qutu.talk.view.MyListView-->
+            <!--android:id="@+id/myList2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:divider="@color/white"-->
+            <!--android:dividerHeight="10dp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll2"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+
+            <!--<TextView-->
+            <!--android:text="密聊推荐"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/font_333333"-->
+            <!--android:drawableLeft="@mipmap/home_miliao"-->
+            <!--android:drawablePadding="3dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--<View-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@mipmap/home_tuijian_gengduo"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <!--<com.qutu.talk.view.MyListView-->
+            <!--android:id="@+id/myList3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:divider="@color/white"-->
+            <!--android:dividerHeight="10dp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll3"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+
+            <!--<TextView-->
+            <!--android:text="微星阁"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/font_333333"-->
+            <!--android:drawableLeft="@mipmap/home_weixingge"-->
+            <!--android:drawablePadding="3dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textGirl"-->
+            <!--android:text="女生"-->
+            <!--android:textSize="13sp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textColor="@drawable/selector_boy_text"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textBoy"-->
+            <!--android:text="男生"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textSize="13sp"-->
+            <!--android:textColor="@drawable/selector_boy_text"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--<View-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"/>-->
+            <!--<ImageView-->
+            <!--android:id="@+id/imgFresh"-->
+            <!--android:src="@mipmap/home_weixingge_shuaxin"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:scaleType="center"-->
+            <!--android:layout_height="match_parent" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.qutu.talk.view.MyGridView-->
+            <!--android:id="@+id/myGrid"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:numColumns="2"-->
+            <!--android:scrollbars="none"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:horizontalSpacing="20dp"-->
+            <!--android:verticalSpacing="20dp" />-->
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+</LinearLayout>

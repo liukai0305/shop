@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/gift2_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="自定义数量"
+        android:inputType="phone"
+        android:textColor="@color/font_ff3e6d"
+        android:textColorHint="@color/font_ff3e6d"
+        android:textSize="12sp" />
+
+</LinearLayout>

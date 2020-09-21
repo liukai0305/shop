@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.family.FamilyIntroActivity">
+
+    <include
+        layout="@layout/include_title"
+        ></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:textSize="@dimen/txt_size_14"
+            android:textColor="@color/font_333333"
+            android:textStyle="bold"
+            android:text="怎么创建家族？"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:lineSpacingExtra="5dp"
+            android:textSize="@dimen/txt_size_11"
+            android:textColor="@color/font_333333"
+            android:text="创建家族必须为大神；\n
+            点击【我的】-【家族】-【创建家族】，进入创建页面，7天之内群内成员必须满足20人的条件,若不满足20人则创建失败，满足则创建成功；\n
+7天之内家族属于创建中不等于家族创建成功，创建成功后订单收益将被抽取20%，其中10%归族长，10%归官方；"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textSize="@dimen/txt_size_14"
+            android:textColor="@color/font_333333"
+            android:textStyle="bold"
+            android:text="怎么加入家族？"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:lineSpacingExtra="5dp"
+            android:textSize="@dimen/txt_size_11"
+            android:textColor="@color/font_333333"
+            android:text="成为大神才可以加入家族；\n
+家族族长或管理员邀请好友或者其他用户，用户接受后，则成功加入家族；\n
+用户也可以在家族列表选择自己想要加入的家族，点击申请加入，家族族长/管理同意后，加入家族即为成功；\n
+不是大神的用户则不能加入家族； "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textSize="@dimen/txt_size_14"
+            android:textColor="@color/font_333333"
+            android:textStyle="bold"
+            android:text="家族解散"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:lineSpacingExtra="5dp"
+            android:textSize="@dimen/txt_size_11"
+            android:textColor="@color/font_333333"
+            android:text="创建家族7天不足20人，家族将被解散；\n
+家族创建成立之后，当家族人数不足20人后的15天之内若不能满足该条件，家族将被自动解散；\n
+族长在家族群更多页面可点击解散家族；\n
+如家族在平台上存在违规、恶意竞争的一些行为，平台将强制解散家族；"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/she_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/she_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获得丰厚"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/she_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/she_cheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成员：11234"
+        app:layout_constraintLeft_toRightOf="@id/she_iv"
+        app:layout_constraintTop_toBottomOf="@id/she_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动：11234"
+        android:id="@+id/she_huo"
+        app:layout_constraintLeft_toRightOf="@id/she_cheng"
+        app:layout_constraintTop_toBottomOf="@id/she_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:id="@+id/she_jian"
+        android:text="ui的话v诺夫艾比udfbsvnuidfbovnjfdbnokj"
+        app:layout_constraintLeft_toRightOf="@id/she_iv"
+        app:layout_constraintTop_toBottomOf="@id/she_cheng"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

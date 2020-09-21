@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/personal_iv_header"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/personal_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="官方小袍"
+            android:textColor="#120606"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personal_iv_header" />
+        <ImageView
+            android:id="@+id/personal_iv_level"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="65dp"
+            android:src="@mipmap/lv1"
+            app:layout_constraintLeft_toRightOf="@id/personal_tv_name"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/personal_tv_attention"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/store_attention"
+            android:gravity="center"
+            android:text="+关注"
+            android:textColor="#EA7575"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/personal_iv_level"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/personal_tv_hold"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/store_pink"
+            android:gravity="center"
+            android:text="撩Ta"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@id/personal_tv_attention"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/personal_tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="同袍官方qq群:12234567"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personal_tv_name" />
+        <TextView
+            android:id="@+id/personal_attention_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="关注"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personal_tv_group" />
+        <TextView
+            android:id="@+id/personal_vermicell_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="粉丝"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/personal_attention_number"
+            app:layout_constraintTop_toBottomOf="@id/personal_tv_group" />
+        <TextView
+            android:id="@+id/personal_empirical_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="经验值"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/personal_vermicell_number"
+            app:layout_constraintTop_toBottomOf="@id/personal_tv_group" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#B3AFAF" />
+
+</LinearLayout>

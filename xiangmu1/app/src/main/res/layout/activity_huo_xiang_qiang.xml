@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Users.Activitys.HuoXiangQiangActivity">
+    <LinearLayout
+        android:id="@+id/dynamic_contexts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.example.xiangmuyi.utils.ObservableScrollView
+            android:id="@+id/dynamic_scrolls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="160dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_finsh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="已结束"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="明十三陵清明祭祀祈福大典"
+                        android:textColor="#090808"
+                        android:textSize="15dp"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_finsh"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_tags"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="汉服活动 同袍面基 文化宣传"
+                        android:textColor="#F10808"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_finsh" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_attention"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/store_attention"
+                        android:gravity="center"
+                        android:text="+关注"
+                        android:textColor="#EA7575"
+                        android:textSize="15sp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:text="已报名：4人"
+                        android:textSize="11dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tags" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_residue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:text="剩余余额：996"
+                        android:textSize="11dp"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_apply"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tags" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="免费"
+                        android:textColor="#ED0606"
+                        android:textSize="20sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_apply" />
+
+                    <ImageView
+                        android:id="@+id/dynamic_activity_iv_time"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/icon_time"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_free" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text=" 活动时间：2020-04-05 09:00"
+                        android:textColor="#130C0C"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_iv_time"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_free" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_tv_by"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:layout_marginTop="5dp"
+                        android:text="报名截止：2020-04-03 23:59"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tv_time" />
+
+                    <ImageView
+                        android:id="@+id/dynamic_activity_iv_place"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tv_by" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_tv_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="10dp"
+                        android:text="活动地点：昌赤路长陵"
+                        android:textColor="#1B1010"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_iv_place"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tv_by" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tv_by" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="7dp"
+                        android:background="#D6D1D1"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tv_place" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/dynamic_activity_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="主办单位：同袍官方社团"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_logo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/dynamic_activity_principal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="负责人：吉恩煦"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_logo"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_unit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="联系电话：15101080686"
+                        app:layout_constraintLeft_toRightOf="@id/dynamic_activity_logo"
+                        app:layout_constraintTop_toBottomOf="@id/dynamic_activity_principal" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#D6D1D1"
+                    app:layout_constraintTop_toBottomOf="@id/dynamic_activity_tv_place" />
+
+                <WebView
+                    android:id="@+id/dynamic_activity_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/discussed_activity_tv_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </com.example.xiangmuyi.utils.ObservableScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dynamic_lv_headers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dynamic_iv_headers"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/head_height"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ww01" />
+
+    </LinearLayout>
+
+    <include layout="@layout/dynamic_toolbar" />
+
+</RelativeLayout>

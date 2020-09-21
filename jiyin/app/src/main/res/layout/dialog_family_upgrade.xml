@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_baoxiao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:background="#282828">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:paddingTop="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c000"
+        android:paddingBottom="@dimen/_40sdp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_history"
+            android:layout_width="70dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="#8fff"
+            app:cardCornerRadius="13dp"
+            android:layout_marginLeft="11dp"
+            android:layout_height="26dp">
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="贡献记录"
+                android:textColor="#fff" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_lucky"
+            android:layout_width="70dp"
+            android:layout_below="@id/cv_history"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:cardBackgroundColor="#8fff"
+            app:cardCornerRadius="13dp"
+            android:layout_marginLeft="11dp"
+            android:layout_height="26dp">
+
+            <TextView
+                android:id="@+id/tv_lucky"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="好运榜"
+                android:textColor="#fff" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="剩余能量豆:1000"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:id="@+id/ll_guize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="11dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/guize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:text="规则"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jiangchi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_guize"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="11dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/jiangbei1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:text="奖池"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_key_count"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_history"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/icon_key_bg"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/icon_open_key" />
+
+            <TextView
+                android:id="@+id/tv_key_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_fed42b"
+                android:textSize="@dimen/txt_size_13" />
+
+            <ImageView
+                android:id="@+id/img_add_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_stone_add" />
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_gemstone_logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:src="@mipmap/img_gemstone"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/layout_key_count" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_tab_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tab_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通贡献"
+                    android:textColor="#ee0092"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/tv_gold_indicator"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="#fff" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tab_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快速贡献"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/tv_color_indicator"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="#fff"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/iv_egg"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_below="@id/ll_tab"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/img_ten_open"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:scaleType="fitXY"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="@dimen/_15sdp"-->
+        <!--            android:src="@mipmap/icon_open_ten"-->
+        <!--            android:layout_below="@id/iv_egg" />-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_open_ten"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_egg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardBackgroundColor="#ee0092"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贡献10次"
+                    android:textColor="#2B02C6"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_ten_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="10个能量豆"
+                    android:textColor="#2B02C6"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_open_one"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_egg"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cv_open_ten"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardBackgroundColor="#ee0092"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贡献1次"
+                    android:textColor="#2B02C6"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_one_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="1个能量豆"
+                    android:textColor="#2B02C6"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_open_hundred"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_egg"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardBackgroundColor="#ee0092"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贡献100次"
+                    android:textColor="#2B02C6"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_hundred_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="100个能量豆"
+                    android:textColor="#2B02C6"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_cut_down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@mipmap/icon_cut_down_stone"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="守护宝箱开启还有3:00分钟"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_11"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_open_ten" />
+
+        <View
+            android:id="@+id/view_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cut_down_time"></View>
+
+
+    </RelativeLayout>
+</LinearLayout>

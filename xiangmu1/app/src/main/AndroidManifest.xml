@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xiangmuyi">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".guide.IntroductionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.own.shezhi.ShiZhiActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.own.IamActivity.MiActivity" />
+        <activity android:name=".ui.own.ownactivity.RegisterActivity" />
+        <activity android:name=".ui.own.ownactivity.UserLoginActivity" />
+        <activity android:name=".ui.own.ownactivity.LoginActivity" />
+        <activity android:name=".ui.discover.discoveractivity.PaiActivity" />
+        <activity android:name=".ui.discover.discoveractivity.SheActivity" />
+        <activity android:name=".ui.discover.discoveractivity.PaoActivity" />
+        <activity android:name=".ui.home.fragments.zheshiwenzhang.YanJinActivity" />
+        <activity android:name=".ui.home.fragments.zheshiwenzhang.DaShi4Activity" />
+        <activity android:name=".ui.home.fragments.zheshiwenzhang.YanJin3Activity" />
+        <activity android:name=".ui.home.fragments.zheshiwenzhang.ChuanTong2Activity" />
+        <activity android:name=".ui.home.fragments.zheshiwenzhang.RenShi1Activity" />
+        <activity android:name=".ui.home.activity.PhotoActivity" />
+        <activity android:name=".ui.home.activity.VideoActivity" />
+        <activity android:name=".ui.home.activity.SqiareViewActivity" />
+        <activity android:name=".ui.Users.Activitys.HuoXiangQiangActivity" />
+        <activity android:name=".ui.Users.Activitys.PerInfoActivity" />
+        <activity android:name=".ui.home.activity.RecommendActivity" />
+        <activity android:name=".ui.home.activity.PhotoViewActivity" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name=".ui.own.IamActivity.PersonageActivity">
+
+        </activity> <!-- 新浪 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1968dd82df324783603256f40f2e617b" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.weinfo.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

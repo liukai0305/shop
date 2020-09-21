@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_baoxiao"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_black_radius_gemstone">
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:text="砸蛋记录"
+            android:textColor="#fff"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/ll_guize"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/guize"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:text="规则"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jiangchi"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_guize"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/jiangbei1"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:text="奖池"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_key_count"
+            android:layout_width="80dp"
+            android:visibility="gone"
+            android:layout_below="@id/tv_history"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/icon_key_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:src="@mipmap/icon_open_key" />
+
+            <TextView
+                android:id="@+id/tv_key_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_fed42b"
+                android:textSize="@dimen/txt_size_13" />
+
+            <ImageView
+                android:id="@+id/img_add_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_stone_add" />
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_gemstone_logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:src="@mipmap/img_gemstone"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/layout_key_count" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_tab_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="金蛋"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_gold_indicator"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="#fff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="彩蛋"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_color_indicator"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="#fff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_egg"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/translant"
+            android:scaleType="fitXY"
+            android:src="@mipmap/gold_egg"
+            android:layout_below="@id/ll_tab" />
+
+        <LinearLayout
+            android:id="@+id/ll_money"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_below="@id/img_ten_open"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:text="余额  0"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="充值>"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_ten_open"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@mipmap/icon_open_ten"
+            android:layout_below="@id/iv_egg" />
+
+        <ImageView
+            android:id="@+id/img_open_one"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_open_one"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/img_ten_open"
+            android:layout_below="@id/iv_egg" />
+
+        <ImageView
+            android:id="@+id/img_open_hundred"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/icon_open_hundred"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_egg" />
+
+        <TextView
+            android:id="@+id/tv_cut_down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@mipmap/icon_cut_down_stone"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="守护宝箱开启还有3:00分钟"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_11"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_ten_open" />
+
+        <View
+            android:id="@+id/view_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cut_down_time"></View>
+
+
+    </RelativeLayout>
+</LinearLayout>

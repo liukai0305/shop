@@ -1,0 +1,2 @@
+include ':lib_svga'
+include ':app', ':arms', ':circleRecycler_library', ':CallKit', ':IMKit', ':IMLib'

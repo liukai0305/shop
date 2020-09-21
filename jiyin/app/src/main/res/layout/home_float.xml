@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRight"
+    android:layout_width="135dp"
+    android:layout_height="55dp"
+    android:background="@mipmap/room_xfc"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <com.qutu.talk.app.view.CircularImage
+        android:id="@+id/imgHeader"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/gender_zhuce_boy" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@drawable/selector_home_right" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/room_gb" />
+</RelativeLayout>

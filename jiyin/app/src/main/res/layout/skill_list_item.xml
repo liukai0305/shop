@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/skill_list_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/my_dj"
+        app:riv_corner_radius="5dp" />
+
+    <TextView
+        android:id="@+id/skill_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/skill_list_img"
+        android:text="王者荣耀"
+        android:textColor="@color/font_333333"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/skill_list_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/skill_list_name"
+        android:drawableLeft="@mipmap/ico_duanwei"
+        android:drawablePadding="5dp"
+        android:text="荣耀黄金"
+        android:textColor="@color/color_FFAA16"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/skill_list_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill_list_level"
+        android:layout_alignLeft="@id/skill_list_name"
+        android:layout_marginTop="7dp"
+        android:text="评分：5.0       接单量：700"
+        android:textColor="@color/font_999999"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/skill_list_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skill_list_score"
+        android:layout_alignLeft="@id/skill_list_name"
+        android:layout_marginTop="10dp"
+        android:text="5金币/局"
+        android:textColor="@color/xindongcolor"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/skill_list_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="12dp"
+        android:src="@mipmap/yx_xiadan" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/zaixian"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/skill_list_sure"-->
+        <!--android:layout_alignTop="@id/skill_list_level"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<com.qutu.talk.app.view.CircularImage-->
+            <!--android:layout_width="6dp"-->
+            <!--android:layout_height="6dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/lv_yuan_shape" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:text="在线"-->
+            <!--android:textColor="@color/font_666666"-->
+            <!--android:textSize="10sp" />-->
+    <!--</LinearLayout>-->
+
+    <View
+        android:id="@+id/skill_list_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/skill_list_img"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/line" />
+</RelativeLayout>

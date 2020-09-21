@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screen_sex_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/screen_bg_selector"
+        android:gravity="center"
+        android:minWidth="65dp"
+        android:minHeight="25dp"
+        android:text="全部"
+        android:textColor="@drawable/selector_charge_mili_text1"
+        android:textSize="11sp" />
+</LinearLayout>

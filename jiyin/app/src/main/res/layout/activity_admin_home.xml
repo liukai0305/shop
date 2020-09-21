@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/room_bg" />
+
+    <LinearLayout
+        android:id="@+id/view_need_offset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/room_home_header" />
+
+
+        <include layout="@layout/layout_room_notice"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <include layout="@layout/one_microphone_position" />
+
+            <include layout="@layout/two_microphone_position" />
+
+            <include layout="@layout/three_microphone_position" />
+
+            <include layout="@layout/four_microphone_position" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <include layout="@layout/five_microphone_position" />
+
+            <include layout="@layout/six_microphone_position" />
+
+            <include layout="@layout/seven_microphone_position" />
+
+            <include layout="@layout/eight_microphone_position" />
+
+        </LinearLayout>
+
+        <include layout="@layout/room_home_bottom" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_admin_music" />
+
+    <include layout="@layout/layout_admin_emoji" />
+
+    <RelativeLayout
+        android:id="@+id/layout_cp_all_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_cp_all_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.qutu.talk.app.view.CircularImage
+                android:id="@+id/img_cp_left_all_in"
+                android:layout_width="42dp"
+                android:layout_height="42dp" />
+
+            <com.qutu.talk.app.view.CircularImage
+                android:id="@+id/img_cp_right_all_in"
+                android:layout_width="42dp"
+                android:layout_height="42dp" />
+
+            <TextView
+                android:id="@+id/tv_cp_all_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_cp_tongfang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_cp_tongfang"
+            android:layout_width="295dp"
+            android:layout_height="198dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/img_cp_left"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_cp_left"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.qutu.talk.app.view.CircularImage
+                    android:id="@+id/img_cp_right"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_cp_right"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/translant"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/imgPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/imgFei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imgFei1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFei8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFeiLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_clear_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="清除CP"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <com.orient.tea.barragephoto.ui.BarrageView
+        android:id="@+id/barrage_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:visibility="gone" />
+    <com.qutu.talk.view.MiniBarrageViewLayout
+        android:id="@+id/mini_bv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+    </com.qutu.talk.view.MiniBarrageViewLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_party"
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="13dp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:cardBackgroundColor="#55ffffff"
+        android:visibility="gone"
+        android:layout_height="26dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_height="match_parent">
+
+            <com.lzy.widget.CircleImageView
+                android:id="@+id/civ_family_avatar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:civ_BorderWidth="0dp"
+                android:src="@mipmap/no_tou"/>
+
+            <TextView
+                android:id="@+id/tv_paidui"
+                android:layout_width="wrap_content"
+                android:text="家族派对（0）"
+                android:textColor="#fff"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

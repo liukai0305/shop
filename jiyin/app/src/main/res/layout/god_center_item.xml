@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="12dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/god_center_item_headimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:riv_corner_radius="4dp" />
+
+    <TextView
+        android:id="@+id/god_center_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/god_center_item_headimg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/god_center_item_headimg"
+        android:text="一瓶橙汁"
+        android:textColor="@color/font_333333"
+        android:textSize="11sp" />
+
+    <com.qutu.talk.view.StarBar
+        android:id="@+id/starBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/god_center_item_name"
+        android:layout_alignLeft="@id/god_center_item_name"
+        android:layout_alignBottom="@id/god_center_item_headimg"
+        android:layout_marginBottom="3dp"
+        app:starCount="5"
+        app:starDistance="5dp"
+        app:starEmpty="@mipmap/ds_star_no"
+        app:starFill="@mipmap/ds_star"
+        app:starSize="10dp" />
+
+    <TextView
+        android:id="@+id/god_center_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/starBar"
+        android:layout_alignBottom="@id/starBar"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/starBar"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="4.0"
+        android:textColor="@color/font_999999"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/god_center_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/god_center_item_headimg"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false"
+        android:text="10.10  12:00"
+        android:textColor="@color/font_999999"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/god_center_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/god_center_item_headimg"
+        android:layout_alignLeft="@id/god_center_item_headimg"
+        android:layout_marginTop="10dp"
+        android:text="声音很nice"
+        android:textColor="@color/font_333333"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/god_center_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/god_center_content"
+        android:layout_marginTop="14dp"
+        android:background="@color/line" />
+</RelativeLayout>

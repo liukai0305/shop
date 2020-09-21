@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/xuan_iv"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xuan_saishi1"
+        android:text="第二届礼衣华夏汉服超模大赛，西北赛区火热报名中！"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:padding="20dp"
+
+        android:textColor="@color/bai"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:maxLines="2"
+        android:layout_below="@id/xuan_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xuan_saishi2"
+        android:textSize="15dp"
+        android:text="让华夏审美引领T台时尚， 让汉服文化重归大众视野” 它来了它来了 第二届礼衣华夏汉服超模大赛它来了 上一届“神仙打架”的名场面还历历在目 这一届超模大赛西北赛区的报名 就已经在同袍APP火热开启啦 第二届礼衣华夏汉服超模大赛 西北赛区 本次礼衣华夏汉服超模大赛西北赛区涵盖有陕西、山西、甘肃、宁夏、新疆、河南、青海、内蒙古西部，目前陕西、宁夏与河南确定成立了分赛区。 西北赛区 · 分赛区 陕西（西安） · 分赛区 河南（信阳 郑州 驻马店） · 分赛区 宁夏（银川） 以上各分赛区均可在【同袍APP 发现-热门活动】页面进行报名~ 报名截止时间：8月6日18:00 你想知道的在这里 问：报名超模"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="官方小跑"
+        android:textSize="10dp"
+        android:id="@+id/xuan_name"
+        android:layout_below="@id/xuan_saishi2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-07-31 17:10:08"
+        android:textSize="10dp"
+        android:id="@+id/xuan_shijian"
+        android:layout_below="@id/xuan_saishi2"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

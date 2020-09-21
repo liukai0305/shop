@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    >
+
+    <RadioButton
+        android:id="@+id/radio_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/selector_game_price"
+        android:button="@null"
+        android:checked="false"
+        android:text=""
+        android:textColor="@drawable/selector_check_box_tag_txt_color"
+        android:textSize="@dimen/txt_size_12" />
+
+    <TextView
+        android:id="@+id/tv_lock_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/txt_size_11"
+        android:textColor="@color/font_999999"
+        android:text=""
+        />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    tools:background="#000"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:text="4"
+        android:textSize="16sp"
+        android:textColor="#EEBC33"
+        android:layout_marginRight="9dp"
+        android:layout_height="wrap_content"/>
+
+    <com.lzy.widget.CircleImageView
+        android:id="@+id/civ_avatar"
+        android:layout_width="46dp"
+        android:layout_marginRight="17dp"
+        app:civ_BorderWidth="0dp"
+        android:src="@mipmap/no_tou"
+        android:layout_height="46dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:text="锤子兄"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:text="ID：123456"
+            android:textColor="#888"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="熔炼值"
+            android:textColor="#fff"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:text="1060"
+            android:textColor="#EEBC33"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

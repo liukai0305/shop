@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title_rcy_redian1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5421321305"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+    
+    <ImageView
+    android:layout_width="140dp"
+    android:layout_height="120dp"
+    android:id="@+id/iv1_rcy_redian1"
+    android:layout_below="@id/tv_title_rcy_redian1"
+    android:layout_marginTop="10dp"
+    />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:id="@+id/iv2_rcy_redian1"
+        android:layout_below="@id/tv_title_rcy_redian1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv1_rcy_redian1"
+        />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:id="@+id/iv3_rcy_redian1"
+        android:layout_below="@id/tv_title_rcy_redian1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv2_rcy_redian1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv3_rcy_redian1"
+        android:text="123466799"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_time"
+        />
+
+</RelativeLayout>

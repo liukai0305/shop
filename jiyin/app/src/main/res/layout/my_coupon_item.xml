@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/my_coupon_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/yhq_hong"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_coupon_pirce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                android:paddingBottom="-3dp"
+                android:textColor="@color/white"
+                android:textSize="33sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/my_coupon_pirce"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/my_coupon_pirce"
+                android:text="金币"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_zhikou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="抵扣券"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/liang_yuan_shape">
+
+        <TextView
+            android:id="@+id/my_coupon_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/font_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/my_coupon_purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_coupon_source"
+            android:layout_alignLeft="@id/my_coupon_source"
+            android:layout_marginTop="8dp"
+            android:text="用于订单服务"
+            android:textColor="@color/font_666666"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/my_coupon_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/my_coupon_purpose"
+            android:layout_alignLeft="@id/my_coupon_source"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="13dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/my_coupon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_coupon_line"
+            android:layout_alignLeft="@id/my_coupon_source"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/font_999999"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/my_coupon_time"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/my_coupon_time"
+            android:textColor="@color/font_999999"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/tishi_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp" />
+    </RelativeLayout>
+</LinearLayout>

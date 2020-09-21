@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="11dp"
+    android:orientation="vertical">
+
+    <com.qutu.talk.view.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/head_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:riv_corner_radius="7dp"
+            tools:src="@mipmap/kaobei" />
+
+        <RelativeLayout
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/biaoqian_img"
+                android:layout_width="32dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/biaoqian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/biaozhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="9dp"
+            android:src="@mipmap/home_yinpin" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toRightOf="@id/biaozhi"
+            android:includeFontPadding="false"
+            android:text="11111111111"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/ooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/hot_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/kaobei" />
+
+            <TextView
+                android:id="@+id/hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hot_img"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color_ff4f4f"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </com.qutu.talk.view.SquareRelativeLayout>
+
+    <TextView
+        android:id="@+id/room_biaoqian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/font_333333"
+        android:textSize="14sp"
+        tools:text="倾心交友们相亲交友" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/font_666666"
+        android:textSize="11sp"
+        android:visibility="gone"
+        tools:text="主持：K" />
+
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_below="@id/head_img"-->
+    <!--        android:layout_marginLeft="83dp"-->
+    <!--        android:layout_marginTop="11dp"-->
+    <!--        android:layout_marginRight="12dp"-->
+    <!--        android:background="@color/line" />-->
+</LinearLayout>

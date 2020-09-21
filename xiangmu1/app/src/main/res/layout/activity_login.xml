@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.own.ownactivity.LoginActivity">
+    <com.example.xiangmuyi.common.CustomVideoView
+        android:layout_width="match_parent"
+        android:id="@+id/video"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_baseline_close_24"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/icon_logo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生活本就该诗情画意"
+            android:textColor="@color/bai"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="手机号码一键登录"
+            android:id="@+id/deng"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="手机验证码或密码登录"
+            android:layout_gravity="center"
+            android:id="@+id/zhu"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/qq"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/qq"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/weibo"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/weibo"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/weixin"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/weixin" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

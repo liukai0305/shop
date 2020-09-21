@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_hei_biankuag"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/img_hot_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="世界上的符合规范大哥"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/img_hot_adapter"
+        android:id="@+id/tv_name_adapter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$699"
+        android:textColor="@color/hong"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_adapter"
+        android:id="@+id/tv_money_adapter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

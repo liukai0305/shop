@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:background="#8000"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:layout_height="wrap_content">
+
+    <com.lzy.widget.CircleImageView
+        android:id="@+id/civ_avatar"
+        android:layout_width="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="35dp"
+        tools:src="@mipmap/kaobei"/>
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        tools:text="清逸"
+        android:textSize="13sp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_ml"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="#FFB610"
+        android:textSize="13sp"
+        android:layout_marginLeft="19dp"
+        tools:text="魅力值：1654" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_clear"
+        android:layout_width="60dp"
+        app:cardBackgroundColor="#ee0092"
+        app:cardCornerRadius="15dp"
+        android:layout_height="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="清除"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_height="match_parent"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="12dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/head_img_recom_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:riv_corner_radius="10dp" />
+
+    <ImageView
+        android:id="@+id/zx_img_recom_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/home_zx"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/label_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignBottom="@id/head_img_recom_home_page"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/name_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/head_img_recom_home_page"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_img_recom_home_page"
+        android:layout_alignStart="@id/head_img_recom_home_page"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#101010"
+        android:textSize="14sp"
+        android:text="求陪玩"/>
+
+    <TextView
+        android:id="@+id/price_home_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_img_recom_home_page"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/red"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/bofang_and_zanting"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/head_img_recom_home_page"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/yy_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bofang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/yy_bf" />
+
+        <ImageView
+            android:id="@+id/gif_jing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/yy_jingtai" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_jing_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/img_voice_play"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time_recom_home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:textColor="#4094FF"
+            android:textSize="11sp" />
+    </LinearLayout>
+</RelativeLayout>

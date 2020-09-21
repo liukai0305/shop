@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_position_eight"
+    android:layout_marginLeft="12dp"
+    android:gravity="center"
+    android:layout_marginTop="2dp"
+    android:orientation="vertical">
+
+        <com.qutu.talk.view.RippleView
+            android:id="@+id/wave_last"
+            style="@style/wave_style"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    <RelativeLayout
+        android:id="@+id/rl_tou_last"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_last"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/user_header"
+            app:riv_border_color="@color/font_89E0FB"
+            app:riv_border_width="1dip"
+            app:riv_corner_radius="180dip" />
+
+        <ImageView
+            android:id="@+id/iv_ts_last"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <ImageView
+                android:id="@+id/img_txk_last"
+                style="@style/txk_style"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"></View>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgVedio_last"
+            android:visibility="gone"
+            android:layout_width="17dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/rl_tou_last"
+            android:layout_alignRight="@id/rl_tou_last"
+            app:layout_constraintCircle="@id/rl_tou_last"
+            app:layout_constraintCircleRadius="25dp"
+            app:layout_constraintCircleAngle="135"
+            app:layout_constraintLeft_toLeftOf="@id/rl_tou_last"
+            app:layout_constraintRight_toRightOf="@id/rl_tou_last"
+            app:layout_constraintTop_toTopOf="@id/rl_tou_last"
+            android:src="@drawable/selector_room_header_bimai" />
+
+    <TextView
+        android:id="@+id/tv_pk_last"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:minWidth="50dp"
+        android:maxWidth="50dp"
+        android:layout_height="13dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_room_pk_bg"
+        android:gravity="center"
+        android:text=""
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        app:layout_constraintCircle="@id/rl_tou_last"
+        app:layout_constraintCircleRadius="19dp"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintLeft_toLeftOf="@id/rl_tou_last"
+        app:layout_constraintRight_toRightOf="@id/rl_tou_last"
+        app:layout_constraintTop_toTopOf="@id/rl_tou_last"
+        />
+
+        <ImageView
+            android:id="@+id/imgGif_last"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    <TextView
+        android:id="@+id/text_last"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老板位"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:maxEms="6"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_tou_last"
+        />
+    <TextView
+        android:id="@+id/daojishi_last"
+        android:layout_width="45dp"
+        android:layout_height="13dp"
+        android:layout_alignTop="@+id/rl_tou_last"
+        android:background="@drawable/daojishi_shape"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rl_tou_last"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>
